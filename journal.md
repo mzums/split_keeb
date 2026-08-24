@@ -48,3 +48,17 @@ And a long discussion on slack (+ my research) about the connection between the 
 - pogo pins:
     - they are just cool, and also easy
     - difficult to find, expensive
+
+## Ergogen outline
+### 24.08.2026 - 3h
+i tried to make an outline in ergogen like here https://flatfootfox.com/ergogen-part2-outlines/, but i'm not able to make it good for the last thumb  
+I had to understand how the outline works by trial and error so it took a lot of time but i think i got it  
+
+![alt text](image-4.png)
+
+---
+i also tried to make the outline in kicad but it looks ~  
+idk why but when i import .kicad_pcb to kicad there is only a shape  
+![alt text](image-5.png)
+---
+> i was told to make the schematic first so i'll try that  

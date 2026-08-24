@@ -1,10 +1,17 @@
 meta:
   engine: 4.1.0
+
+units:
+  kx: cx
+  ky: cy
+  px: kx + 2
+  py: ky + 2
+
 points:
   zones:
     matrix:
       anchor:
-        rotate: 15
+        rotate: 20
       columns:
         first:
         pinky:
@@ -22,6 +29,7 @@ points:
         bottom:
         home:
         top:
+
     thumbfan:
       anchor:
         ref: matrix_inner_bottom
@@ -42,17 +50,66 @@ points:
           key.origin: [-9.5, -9]
       rows:
         thumb:
+
   rotate: -20
 
-  mirror:
-    ref: matrix_pinky_home
-    distance: 223.7529778
-  
-
 outlines:
-  board:
+  raw:
     - what: rectangle
-      size: [100, 100]
+      where: true
+      size: [px, py]
+
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx - 0.5, ky - 0.5]
+
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        # ---- upper edge
+        - ref: matrix_pinky_top
+          shift: [-1.5px, 0.5py]
+        - ref: matrix_first_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_middle_top
+          shift: [-0.5px, 0.5py]
+        - ref: matrix_index_top
+          shift: [-0.5px, 0.8py]
+        - ref: matrix_inner_top
+          shift: [0.5px, 0.5py]
+
+        # ---- rigth edge
+        - ref: matrix_inner_home
+          shift: [0.5px, 0]
+        - ref: matrix_inner_bottom
+          shift: [0.5px, -0.5py]
+
+        # ---- Thumbfan
+        - ref: thumbfan_far2_thumb
+          shift: [1.0px, 0.5py]
+        - ref: thumbfan_far_thumb
+          shift: [-0.5px, -0.5py]
+        - ref: thumbfan_home_thumb
+          shift: [-0.5px, -0.5py]
+        - ref: thumbfan_near_thumb
+          shift: [-0.5px, -0.5py]
+
+        # ---- bottom edge
+        - ref: matrix_index_bottom
+          shift: [-2.5px, -1.2py]
+        - ref: matrix_pinky_bottom
+          shift: [-0.5px, -0.5py]
+        - ref: matrix_ring_bottom
+          shift: [-2.5px, -1.0py]
+
+      fillet: 2
+
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
 
 pcbs:
   keyboard:
@@ -60,3 +117,14 @@ pcbs:
       main:
         outline: board
         layer: Edge.Cuts
+
+    footprints:
+      choc_hotswap:
+        what: choc
+        where: true
+        params:
+          keycaps: true
+          reverse: false
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
