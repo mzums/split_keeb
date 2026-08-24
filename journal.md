@@ -62,3 +62,11 @@ idk why but when i import .kicad_pcb to kicad there is only a shape
 ![alt text](image-5.png)
 ---
 > i was told to make the schematic first so i'll try that  
+
+## Schematic
+### 24.08.2026 - 2h
+![alt text](image-6.png)
+i did everything like on my schematics but the wires look very chaotic compared to the ones in the guide  
+![alt text](image-7.png)  
+Also I discovered that i can rotate elements by pressing E and adjusting orientation  
+![alt text](image-8.png)
