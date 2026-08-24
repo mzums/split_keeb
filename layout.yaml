@@ -1,0 +1,62 @@
+meta:
+  engine: 4.1.0
+points:
+  zones:
+    matrix:
+      anchor:
+        rotate: 15
+      columns:
+        first:
+        pinky:
+        ring:
+          key.splay: -2
+          key.origin: [-12, -19]
+          key.stagger: 8
+        middle:
+          key.stagger: 8
+        index:
+          key.stagger: -6
+        inner:
+          key.stagger: -2
+      rows:
+        bottom:
+        home:
+        top:
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-45, -19]
+      columns:
+        near:
+        home:
+          key.spread: 21.25
+          key.splay: -10
+          key.origin: [-11.75, -9]
+        far:
+          key.spread: 21.25
+          key.splay: -18
+          key.origin: [-9.5, -9]
+        far2:
+          key.spread: 21.25
+          key.splay: -28
+          key.origin: [-9.5, -9]
+      rows:
+        thumb:
+  rotate: -20
+
+  mirror:
+    ref: matrix_pinky_home
+    distance: 223.7529778
+  
+
+outlines:
+  board:
+    - what: rectangle
+      size: [100, 100]
+
+pcbs:
+  keyboard:
+    outlines:
+      main:
+        outline: board
+        layer: Edge.Cuts
