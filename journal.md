@@ -70,3 +70,13 @@ i did everything like on my schematics but the wires look very chaotic compared 
 ![alt text](image-7.png)  
 Also I discovered that i can rotate elements by pressing E and adjusting orientation  
 ![alt text](image-8.png)
+
+## Started routing
+### 25.08.2026 - 0.7h
+Routing didn't work  
+![alt text](image-9.png)
+![alt text](image-10.png)  
+But i changed the layer which i imported keys.dxf to to front courtyard and it works  
+![alt text](image-11.png)  
+Idk why but the keys from keys.dxf are smaller that the footprints  
+TODO: fix this
