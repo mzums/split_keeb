@@ -86,3 +86,9 @@ TODO: fix this
 I realised that my keys.dxf has to have rectanglar (18x17mm) switches (because I want low profile) and the spacing between the centres of switches doesn't want to change, idk why so the vertical spacing is greater that the horizontal one.  
 I tried to fix this in ergogen but idk how.  
 ![alt text](image-12.png)
+
+## Seems to be okay...
+### 10.09.2026 - 0,7h
+I generated the kicad_pcb in ergogen and did routing (except for connecting columns and rows to pico)  
+![alt text](image-13.png)
+> TODO: read when to use F.Cu and when B.Cu

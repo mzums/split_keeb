@@ -1,9 +1,6 @@
 meta:
   engine: 4.1.0
 
-  cx: 19.05
-  cy: 19.05
-
 units:
   kx: 18
   ky: 17
@@ -13,6 +10,9 @@ units:
 points:
   zones:
     matrix:
+      key:
+        spread: kx
+        padding: ky
       anchor:
         rotate: 20
       columns:
@@ -131,3 +131,12 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+
+      diodes:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -4.5]
