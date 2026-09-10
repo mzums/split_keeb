@@ -1,9 +1,12 @@
 meta:
   engine: 4.1.0
 
+  cx: 19.05
+  cy: 19.05
+
 units:
-  kx: cx
-  ky: cy
+  kx: 18
+  ky: 17
   px: kx + 2
   py: ky + 2
 

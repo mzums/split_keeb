@@ -80,3 +80,9 @@ But i changed the layer which i imported keys.dxf to to front courtyard and it w
 ![alt text](image-11.png)  
 Idk why but the keys from keys.dxf are smaller that the footprints  
 TODO: fix this
+
+## Being confused
+### 10.09.2026 - 1.5h
+I realised that my keys.dxf has to have rectanglar (18x17mm) switches (because I want low profile) and the spacing between the centres of switches doesn't want to change, idk why so the vertical spacing is greater that the horizontal one.  
+I tried to fix this in ergogen but idk how.  
+![alt text](image-12.png)
