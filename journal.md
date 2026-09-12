@@ -92,3 +92,7 @@ I tried to fix this in ergogen but idk how.
 I generated the kicad_pcb in ergogen and did routing (except for connecting columns and rows to pico)  
 ![alt text](image-13.png)
 > TODO: read when to use F.Cu and when B.Cu
+
+## Routing done I think
+### 12.09 - 0,5h
+![alt text](image-14.png)
