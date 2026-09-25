@@ -101,3 +101,8 @@ I generated the kicad_pcb in ergogen and did routing (except for connecting colu
 ### 23.09 - 2h
 Every key is on the right position, everything with footprints etc.
 ![alt text](image-15.png)
+
+## Routing
+### 23, 25.09 - 1,5h
+done routing
+![alt text](image-16.png)
